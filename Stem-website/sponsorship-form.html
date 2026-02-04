@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>STEM Sponsorship Form</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #dfeeff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #003366;
+    font-size: 36px;
+}
+
+p.sub {
+    text-align: center;
+    color: gray;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #bbb;
+    font-size: 15px;
+}
+
+button {
+    background: #004d99;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #003366;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    color: gray;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+
+<a href="index.html">Click here to go home</a>
+
+<h1>STEM Racing India Sponsorship Form</h1>
+<p class="sub">School Project – Demo Contact Form</p>
+
+<form name="sponsorship-form" method="POST" action="https://formspree.io/f/xaqbrgyz">
+
+<label>Company / Sponsor Name</label>
+<input type="text" name="Company" required>
+
+<label>Contact Person Name</label>
+<input type="text" name="Contact Person">
+
+<label>Phone Number</label>
+<input type="tel" name="Phone">
+
+<label>Email Address</label>
+<input type="email" name="Email" required>
+
+<label>Company Address</label>
+<textarea name="Address" rows="2"></textarea>
+
+<label>Sponsorship Type</label>
+<select name="Type">
+    <option>Gold Sponsor</option>
+    <option>Silver Sponsor</option>
+    <option>Bronze Sponsor</option>
+</select>
+
+<label>Proposed Amount (Optional)</label>
+<input type="number" name="Amount">
+
+<label>Message / Notes</label>
+<textarea name="Message" rows="4"></textarea>
+
+<button type="submit">Submit</button>
+
+</form>
+
+<footer>
+<p>Demo Form – No Real Payment |But Can Be Use For Agreements | Class 7 STEM Project</p>
+</footer>
+
+
+</div>
+
+
+</body>
+</html>
