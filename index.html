@@ -4,6 +4,57 @@
     <title>STEM Racing India</title>
 
     <style>
+
+#djToggle {
+  display: none;
+}
+
+/* DJ button */
+.dj-btn {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: #111;
+  color: #00ffff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: Arial;
+  box-shadow: 0 0 8px #00ffff55;
+}
+
+/* popup panel */
+.dj-panel {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+  width: 240px;
+  background: #000;
+  color: #00ffff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00ffff55;
+  display: none;
+  font-family: Arial;
+}
+
+/* show popup when checked */
+#djToggle:checked ~ .dj-panel {
+  display: block;
+}
+
+.dj-panel audio {
+  width: 100%;
+  margin-top: 6px;
+}
+
+.close-btn {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+  color: white;
+}
         body {
             background-color: #e6f2ff;
             font-family: Arial, sans-serif;
@@ -63,6 +114,31 @@
 <body>
 
 <div class="container">
+
+<!-- Toggle Checkbox -->
+<input type="checkbox" id="djToggle">
+
+<!-- DJ Button -->
+<label for="djToggle" class="dj-btn">🎧 DJ</label>
+
+<!-- Popup Panel -->
+<div class="dj-panel">
+  <h3>DJ Sound Library</h3>
+
+  hip-hop
+  <audio controls loop>
+    <source src="music/kontraa-no-sleep.mp3" type="audio/mpeg">
+  </audio>
+
+  soft piano
+  <audio controls loop>
+    <source src="music/soft-background-music.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Close -->
+  <label for="djToggle" class="close-btn">Close</label>
+</div>
+
 
 <h2>Our Team</h2>
 <p>
@@ -284,6 +360,8 @@
 </center>
 
 
+
+</div>
 
 </div>
 
