@@ -4,34 +4,35 @@
 <title>STEM Sponsorship Form</title>
 
 <style>
-
-   /* Navbar */
-.navbar {
+   .navbar {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
-  background: #003366;
-  padding: 12px;
-  text-align: center;
+  height: 55px;
+  background: #0a3b6e;
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;       /* center vertically */
+  z-index: 1000;
 }
 
 .navbar a {
   color: white;
   text-decoration: none;
-  margin: 0 20px;
   font-size: 18px;
+  margin: 0 25px;
+  font-family: Arial, sans-serif;
 }
 
-/* Content */
-.container {
-  margin-top: 80px;
-  padding: 25px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* prevents content hiding under navbar */
+body {
+  margin: 0;
+  padding-top: 65px;
 }
 body {
     font-family: Arial, sans-serif;
@@ -159,6 +160,7 @@ footer {
 
 </body>
 </html>
+
 
 
 
