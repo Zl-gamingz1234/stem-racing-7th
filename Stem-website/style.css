@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #eef3ff;
+  color: #222;
+  text-align: center;
+}
+
+.header {
+  background: #003366;
+  color: white;
+  padding: 70px 20px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 48px;
+}
+
+.section {
+  padding: 50px 20px;
+  max-width: 950px;
+  margin: auto;
+}
+
+h2, h3 {
+  color: #003366;
+}
+
+p {
+  line-height: 1.7;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.08);
+  margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.mile {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  border-top: 5px solid #003366;
+}
+
+.sponsor-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px,1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.sponsor-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  font-weight: bold;
+  color: #003366;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background: #cfcfcf;
+  margin: 60px auto;
+  width: 70%;
+}
+
+button {
+    background: #004d99;
+    color: white;
+    padding: 12px;
+    width: 40%;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #003366;
+}
